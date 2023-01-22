@@ -35,8 +35,7 @@ class AuthController {
             );
             // const serialized = serialize("authorization", token);
             res.cookie("auth", token, {
-                httpOnly: true,
-                domain: ".herokuapp.com",
+                domain: "localhost:3000",
             });
 
             // setHeader("Set-Cookie", serialized, {
