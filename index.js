@@ -24,7 +24,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 app.use(
     cors({
-        origin: "http://localhost:3000",
+        origin: "https://yanki-ecru.vercel.app",
         credentials: true,
         optionSuccessStatus: 200,
     })
